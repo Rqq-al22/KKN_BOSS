@@ -40,3 +40,11 @@ Route::get('/debug-env', function () {
     ];
 });
 
+Route::get('/test-api', function () {
+    return [
+        'success' => true,
+        'members' => \App\Models\Member::orderBy('name', 'asc')->get()
+    ];
+});
+
+
