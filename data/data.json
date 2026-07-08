@@ -1,0 +1,73 @@
+{
+  "admin": {
+    "username": "admin",
+    "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+  },
+  "config": {
+    "cutoffTime": "10:00"
+  },
+  "members": [
+    {
+      "name": "Ahmad Fauzi",
+      "nim": "120120001",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "name": "Budi Santoso",
+      "nim": "120120002",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "name": "Citra Lestari",
+      "nim": "120120003",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "name": "Dewi Sartika",
+      "nim": "120120004",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "name": "Eko Prasetyo",
+      "nim": "120120005",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "name": "Hendra Wijaya",
+      "nim": "120120006",
+      "fakultas": "Fakultas Teknik",
+      "jurusan": "Sistem Informasi"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "2916516f-db8c-4164-99bc-9094b80f9cae",
+      "name": "Ahmad Fauzi",
+      "nim": "123456",
+      "fakultas": "Teknik",
+      "timestamp": "2026-07-08T01:01:36.068Z",
+      "status": "Telat"
+    },
+    {
+      "id": "f98d33a1-ed9c-44b7-a397-6c834afa3f19",
+      "name": "Hendra Wijaya",
+      "nim": "654321",
+      "fakultas": "Kedokteran",
+      "timestamp": "2026-07-08T01:18:06.180Z",
+      "status": "Hadir"
+    },
+    {
+      "id": "6db8b07f-2eb8-4f8d-880b-903810276ed7",
+      "name": "Budi Santoso",
+      "nim": "111222",
+      "fakultas": "Ekonomi",
+      "timestamp": "2026-07-08T01:22:15.449Z",
+      "status": "Hadir"
+    }
+  ]
+}
