@@ -3,7 +3,7 @@
   "framework": null,
   "builds": [
     {
-      "src": "api/index.php",
+      "src": "vercel-entry/index.php",
       "use": "vercel-php@0.6.2"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/vercel-entry/index.php"
     }
   ],
   "env": {
