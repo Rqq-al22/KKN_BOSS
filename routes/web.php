@@ -28,3 +28,15 @@ Route::get('/absen.html', function () {
 Route::get('/admin.html', function () {
     return view('admin');
 });
+
+Route::get('/debug-env', function () {
+    return [
+        'APP_KEY_exists' => !empty(env('APP_KEY')),
+        'DATABASE_URL_exists' => !empty(env('DATABASE_URL')),
+        'APP_ENV' => env('APP_ENV'),
+        'APP_DEBUG' => env('APP_DEBUG'),
+        'all_env_keys' => array_keys($_ENV),
+        'all_server_keys' => array_keys($_SERVER),
+    ];
+});
+

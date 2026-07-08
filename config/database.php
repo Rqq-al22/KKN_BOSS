@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$databaseUrl = env('DATABASE_URL');
+$databaseUrl = env('DATABASE_URL', 'postgresql://neondb_owner:npg_JXk7uQF9mUjf@ep-muddy-mouse-aomamdvi-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require');
 $parsedUrl = $databaseUrl ? parse_url($databaseUrl) : null;
 $pgsqlHost = env('DB_HOST', '127.0.0.1');
 $pgsqlPort = env('DB_PORT', '5432');
@@ -47,9 +47,9 @@ return [
     |
     */
 
-    'default' => (env('DATABASE_URL') && 
-                  (str_starts_with(env('DATABASE_URL'), 'postgres://') || str_starts_with(env('DATABASE_URL'), 'postgresql://')) && 
-                  !str_contains(env('DATABASE_URL'), 'your-neon-host.neon.tech')) 
+    'default' => ($databaseUrl && 
+                  (str_starts_with($databaseUrl, 'postgres://') || str_starts_with($databaseUrl, 'postgresql://')) && 
+                  !str_contains($databaseUrl, 'your-neon-host.neon.tech')) 
                     ? 'pgsql' 
                     : env('DB_CONNECTION', 'sqlite'),
 
